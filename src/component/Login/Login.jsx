@@ -10,7 +10,7 @@ const Login = () => {
 
     const HandleToken=()=>{
      localStorage.setItem('status','1');
-     navigate('/');
+     navigate('/dashboard');
     }
 
     return (

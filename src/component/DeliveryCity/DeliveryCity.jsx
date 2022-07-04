@@ -7,6 +7,7 @@ import empty_checkbox from '../../assets/empty_checkbox.png';
 import location_button from '../../assets/location_button.png';
 import more from '../../assets/more.png';
 import close from '../../assets/close.png';
+import index from '../../assets/index.jpg';
 import { Modal, ModalDialog } from 'react-bootstrap';
 import ThreeDot from '../Three-dot-div/ThreeDot';
 import '../Three-dot-div/ThreeDot.css'
@@ -46,13 +47,13 @@ const DeliveryCity = () => {
                      </div>
 
                      <div className="col-lg-5 fghdfkdh">
-                        <div className="navigationkgf">
-                            <p>Delivery {`>`} city </p>
+                        <div className="navigationkgf d-flex">
+                            <span>Delivery location</span><p>{`>`} city </p>
                         </div>
                      </div>
 
                      <div className="col-lg-3 dsgfdgyhf">
-                         <div className="refresh-iconkjgf">
+                         <div className="refresh-iconkjgfff">
                             <img src={filter} alt="" />
                         </div>
                         <div className="add-city-buttonkjhv">
@@ -68,15 +69,23 @@ const DeliveryCity = () => {
 
                                     
                                 <Modal.Body>
+                                    <div className="sgdgdhh d-flex">
+                                    <div className="div-imgg">
+                                        <img src={index} alt=""  className="sgddg"/>
+                                    </div>
+                                    <p className='adfgbut'>Upload Image</p>
+                                    </div>
+                                    
+
+
                                     <div className="modal-input">
                                         <input type="text" className="input-field-1" value={ModalInput} onChange={(e)=> setModalInput(e.target.value)} placeholder='Add city Name' />
                                     </div>
-                                </Modal.Body>
-                                <footer>
                                     <div className="modal-button">
                                         <button className='add-modal-button'>Add City</button>
                                     </div>
-                                </footer>
+                                </Modal.Body>
+                                
                             </Modal>
                         </div>
 
@@ -93,13 +102,14 @@ const DeliveryCity = () => {
 
                                     <th className='srno' style={{ paddingLeft: "30px" }}>Sr.no.</th>
 
-                                    <th className='image' >Image</th>
+                                    <th className='image' style={{width:"160px"}}>Image</th>
 
-                                    <th className='city' style={{  whiteSpace: "nowrap" }}>City Name</th>
+                                    <th className='city' style={{  whiteSpace: "nowrap",width:"250px" }}>City Name</th>
 
-                                    <th className='delivery' style={{  width: "264px", whiteSpace: "nowrap" }}>Delivery location</th>
+                                    <th className='delivery' style={{  width: "60px", whiteSpace: "nowrap" }}>Delivery location</th>
 
-                                    <th className='action'>Action</th>
+                                    <th className='action' style={{width:"80px"}}>Action</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>

@@ -33,10 +33,8 @@ const DeliveryLocation = () => {
                         </div>
                      </div>
 
-                     <div className="col-lg-5 navigationkgfff">
-                        <div className="navigationkgf">
-                            <p>Delivery {`>`} city </p>
-                        </div>
+                     <div className="col-lg-5 navigationkgfff d-flex">
+                            <span>Delivery location</span><p>{`>`} city </p>
                      </div>
 
                      <div className="col-lg-3 dsgfdgyhfff">
@@ -59,11 +57,11 @@ const DeliveryLocation = () => {
 
                                     <th className='srno-2' style={{ paddingLeft: "64px" }}>Sr.no.</th>
 
-                                    <th className='location-2' style={{ paddingLeft: "112px", whiteSpace: "nowrap" }}>Location Name</th>
+                                    <th className='location-2' style={{  whiteSpace: "nowrap" }}>Location Name</th>
 
-                                    <th className='city-2' style={{ paddingLeft: "80px", width: "264px", whiteSpace: "nowrap" }}>City Name</th>
+                                    <th className='city-2' style={{  width: "30%", whiteSpace: "nowrap" }}>City Name</th>
 
-                                    <th className='action-2' style={{ paddingeft: "600px" }}>Action</th>
+                                    <th className='action-2' style={{width:"6%"}}>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -72,9 +70,9 @@ const DeliveryLocation = () => {
 
                                     <td aria-disabled={Block ? true:""} style={{ paddingLeft: "64px" }}>01</td>
 
-                                    <td aria-disabled={Block ? true:""} style={{ paddingLeft: "112px " }}>Sector 01</td>
+                                    <td aria-disabled={Block ? true:""} >Sector 01</td>
 
-                                    <td aria-disabled={Block ? true:""} className='city-td-2' style={{ paddingLeft: "80px"}}>Mumbai
+                                    <td aria-disabled={Block ? true:""} className='city-td-2' >Mumbai
                                     </td>
                                      <td >
                                         <div className="dropdown-container" tabIndex="-1">
@@ -90,9 +88,9 @@ const DeliveryLocation = () => {
 
                                     <td style={{ paddingLeft: "64px" }}>01</td>
 
-                                    <td style={{ paddingLeft: "112px " }}>Sector 01</td>
+                                    <td >Sector 01</td>
 
-                                    <td className='city-3' style={{ paddingLeft: "80px", whiteSpace: "nowrap" }}>Mumbai
+                                    <td className='city-3' style={{  whiteSpace: "nowrap" }}>Mumbai
                                     </td>
                                      <td >
                                         <div className="dropdown-container" tabIndex="-1">

@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import './DeliveryZone.css'
 import search from '../../assets/search.png';
 import filter from '../../assets/filter.png'
-import side_menu_close from '../../assets/side_menu_close.png';
 import empty_checkbox from '../../assets/empty_checkbox.png';
-import location_button from '../../assets/location_button.png';
+import minus from '../../assets/minus.png';
 import more from '../../assets/more.png';
 import close from '../../assets/close.png';
 import ThreeDot from '../Three-dot-div/ThreeDot';
 import '../Three-dot-div/ThreeDot.css';
 import { Modal } from 'react-bootstrap';
+
 
 
 const DeliveryZone = () => {
@@ -54,10 +54,8 @@ const DeliveryZone = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-5 navigationkgffffff">
-                        <div className="navigationkgffff">
-                            <p className='sdfgfhjdh'>Delivery {`>`} zone </p>
-                        </div>
+                    <div className="col-lg-5 navigationkgffffff d-flex">
+                           <span>Delivery location</span><p>{`>`} zone </p>
                     </div>
 
                     <div className="col-lg-3 dsgfdgyhffffff">
@@ -77,19 +75,18 @@ const DeliveryZone = () => {
 
                             {/* add city modal */}
                             <div className="add-zone-modal-4">
-                                <Modal show={showModal}>
+                                <Modal show={showModal} className="oikjmi">
 
-                                    <div className="head-4" >
-                                        <p className='add-zone-text-4'> Add city </p>
-                                        <img src={close} className="btn-cross-4" onClick={handleModalHide} />
-                                    </div>
-
-
-                                    <Modal.Body>
-                                        <div className="modal-input-4">
+                                    <div >
+                                        <div className="headfsdgfd-4" >
+                                            <p className='add-zone-textdfgd-4'> Add city </p>
+                                            <img src={close} className="btn-crosszdgfgfd-4" onClick={handleModalHide} />
+                                        </div>
+                                        <Modal.Body>
+                                        <div className="modal-inputdfgf-4">
                                             <input type="text" className="input-field-4" value={ModalInput} onChange={(e) => setModalInput(e.target.value)} placeholder='Add city Name' />
                                         </div>
-                                        <div className="modal-input-4">
+                                        <div className="modal-inputasdfdf-4">
                                             <select name="" id="" className='select-input-4' >
                                                 <option className="main-city" value="">Select City</option>
                                                 <option className="main-city" value="">Sector 1</option>
@@ -97,104 +94,105 @@ const DeliveryZone = () => {
                                                 <option className="main-city" value="">Sector 3</option>
                                             </select>
                                         </div>
-                                        <div className="modal-input-4">
+                                        <div className="modal-inputasdfdf-4">
                                             <select name="" id="" className='select-input-4' >
                                                 <option value="">Select location</option>
 
                                             </select>
                                         </div>
-                                        <div className="modal-input-4">
+                                        <div className="modal-inputasdfdf-4">
                                             <select name="" id="" className='select-input-4' >
                                                 <option value="">Assign to</option>
                                                 <option value="" onClick={handleModalShowAssign}></option>
 
                                             </select>
                                         </div>
-                                    </Modal.Body>
-                                    <footer>
-                                        <div className="modal-button">
-                                            <button className='add-modal-button-4'>Submit</button>
-                                        </div>
-                                    </footer>
+                                        </Modal.Body>
+                                        <footer>
+                                            <div className="modal-buttondgdgsd">
+                                                <button className='add-modal-button-4'>Submit</button>
+                                            </div>
+                                        </footer>
+                                    </div>
                                 </Modal>
                             </div>
 
                             {/* assign modal */}
                             <div className="add-zone-modal-5">
                                 <Modal show={ModalShowAssign} id="assign-modal">
-                                    <div className="head-5" >
-                                        <p className='add-zone-text-5'>Assign to </p>
-                                        <img src={close} className="btn-cross-5" onClick={handleModalHideAssign} />
+                                    <div className="headdsgdf-5 d-flex" >
+                                        <p className='add-zone-textsdgs-5'>Assign to </p>
+                                        <img src={close} className="btn-crosssgdd-5" onClick={handleModalHideAssign} />
                                     </div>
 
                                     {/* body for assign modal */}
                                     <Modal.Body>
-                                        <div className="main-div-assign-name-data-5">
-                                            <div className="assign-name-data-5">
+                                        <div className="main-div-assign-namefgdg-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
                                                 <div className="assign-icon">
                                                     <img src={close} alt="" className="assign-icon-5" /> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                            <div className="assign-name-datadsfsfs-5">
+                                                <div className="                    ">Deep</div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
 
-                                            <div className="assign-name-data-5">
+                                            <div className="assign-name-datadsfsfs-5">
                                                 <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
+                                                <div className="assign-icon">
+                                                    <img src={close} alt=""  className="assign-icon-5"/> </div>
                                             </div>
 
                                         </div>
@@ -218,7 +216,7 @@ const DeliveryZone = () => {
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th className='checkbox-img'><img src={empty_checkbox} alt="" /> </th>
+                                    <th className='checkbox-img'><img src={empty_checkbox} alt=""  /> </th>
 
                                     <th style={{ paddingLeft: "30px" }}>Sr.no.</th>
 
@@ -226,7 +224,7 @@ const DeliveryZone = () => {
 
                                     <th style={{ whiteSpace: "nowrap" }}>Delivery bot assign</th>
 
-                                    <th style={{ whiteSpace: "nowrap" }}>City Name</th>
+                                    <th className="citydgdg">City Name</th>
 
                                     <th style={{ width: "160px", whiteSpace: "nowrap" }}>Delivery location</th>
 
@@ -244,15 +242,15 @@ const DeliveryZone = () => {
                                     <td >Abc Cdg</td>
 
                                     <td >
-                                        <div className="icon-delete-3 row">
-                                            <i class="fa fa-trash-o" aria-hidden="true" style={{ color: "red" }}></i>
+                                        <div className="icon-delete-3fdgdg d-flex">
+                                            <img src={minus} alt="minus" className='dsfdjfdf' />
                                             <div className="delete-city-3 p-0">
                                                 Mumbai
                                             </div>
                                         </div>
                                     </td>
 
-                                    <td style={{ width: "160px", whiteSpace: "nowrap" }}>Sector 2,sector 7,sector 14,
+                                    <td style={{ width: "160px", whiteSpace: "nowrap",paddingRight: "100px" }}>Sector 2,sector 7,sector 14,
                                         sector 19... <span>See more</span>
 
                                     </td>
@@ -280,7 +278,6 @@ const DeliveryZone = () => {
                                     <td >
 
                                         <div className="icon-delete-3 row">
-                                            {/* <i class="fa fa-trash-o" aria-hidden="true" style={{color:"red"}}></i> */}
                                             <div className="Nodelete-city-3">
                                                 Mumbai
                                             </div>
@@ -317,7 +314,7 @@ const DeliveryZone = () => {
                                         </div>
                                     </td>
 
-                                    <td style={{ width: "160px", whiteSpace: "nowrap" }}>Sector 2,sector 7,sector 14,
+                                    <td style={{ width: "160px", whiteSpace: "nowrap",paddingRight: "100px" }}>Sector 2,sector 7,sector 14,
                                         sector 19... <span>See more</span>
                                     </td>
                                     <td >

@@ -61,15 +61,24 @@ padding-left: 21px;
 }
 .navigationkgffffff
 {
-padding: 13px 16px 16px 16px;
+  width: 52%;
+  height: 100%;
+  border-right: 2px solid #ECECEC;
+}
+.navigationkgffffff p
+{
+  padding: 25px 1px;
   color: #222222;
   font-family: Avenir;
   font-size: 18px;
   font-weight: 900;
   letter-spacing: 0;
   line-height: 25px;
-width: 52%;
-border-right: 2px solid #ECECEC;
+}
+.navigationkgffffff span
+{
+  padding: 22px 12px;
+  color: #222222;
 }
 .dsgfdgyhffffff
 {
@@ -104,7 +113,7 @@ justify-content: flex-end
 outline: none;
 border: none;
 background: #007aff;
-margin-left: 28px;
+margin-left: 24px;
 margin-top: 10px;
 color: #FFFFFF;
 font-family: Avenir;
@@ -253,7 +262,7 @@ padding-left: 84px!important;
 
 }
 .modal-dialog {
-  height: 63%;
+  height: 63% !important;
   background: black;
   border-radius: 8px;
   top: 24%;
@@ -282,8 +291,12 @@ font-weight: 300;
 letter-spacing: 0;
 line-height: 19px;
 }
+.headdsgdf-5
+{
+  justify-content: space-between;
+}
 /* assign to  */
-.add-zone-text-5
+.add-zone-textsdgs-5
 {
 color: #222222;
 font-family: Avenir;
@@ -291,10 +304,11 @@ font-size: 24px;
 font-weight: 900;
 letter-spacing: 0;
 line-height: 33px;
-margin: 10px 10px 10px 27px;
+margin: 17px 4px 4px 29px;
+padding-top: 1px;
 }
 
-.add-zone-text-4
+.add-zone-textdfgd-4
 {
 color: #222222;
 font-family: Avenir;
@@ -302,30 +316,24 @@ font-size: 24px;
 font-weight: 900;
 letter-spacing: 0;
 line-height: 33px;
-margin: 10px 10px 10px 27px;
+ margin: 13px 9px 0px 40px;
+}
+.headfsdgfd-4
+{
+display: flex;
+margin-top: 20px;
+justify-content: space-between;
 }
 
-.head-4
-{
-  display: flex;
-}
-.head-5
-{
-  display: flex;
-}
-.btn-cross-5 {
-height: 24px;
-width: 24px;
-right: 5%;
-margin-left: 270px;
-margin-top: 16px;
-}
-.btn-cross-4 {
+.btn-crosssgdd-5 {
   height: 24px;
-  width: 24px;
-  right: 5%;
-  margin-left: 290px;
-  margin-top: 16px;
+  margin-right: 34px;
+  margin-top: 24px;
+}
+.btn-crosszdgfgfd-4 {
+  height: 24px;
+  margin-right: 22px;
+margin-top: 25px;
 }
 
 .add-modal-button-4
@@ -345,28 +353,31 @@ margin: 9px 85px;
 border: none;
 outline: none;
 }
-.modal-input-4
+.modal-inputasdfdf-4
 {
   height: 48px;
-  width: 432px;
   border-radius: 8px;
   background-color: #F6F6F7;
   margin-top: 16px;
 }
-.modal-input-4 input
+.modal-inputdfgf-4 input
 {
-  color: #909090;
-  font-family: Avenir;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0;
-  line-height: 19px;
-  outline: none;
-  border: none;
-  margin-top: 12px;
-  margin-left: 25px;
-  margin-bottom: 8px;
-  background: #f6f6f7;
+height: 48px;
+width: 99%;
+color: #909090;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+outline: none;
+border: none;
+margin-top: 12px;
+margin-left: 5px;
+margin-bottom: 8px;
+background: #f6f6f7;
+border-radius: 8px;
+padding: 23px;
 }
 .select-input-4 {
   width: 100%;
@@ -396,18 +407,22 @@ outline: none;
 overflow-y: auto;
 }
 
+.modal-buttondgdgsd
+{
+width: 91%;
+border-radius: 24px;
+background-color: #007AFF;
+margin-left: 23px;
+}
 /* assign modal  */
 #assign-modal
 {
  max-height: 424px;
 }
 .assign-icon-5 {
- height: 24px;
-width: 24px;
-right: 5%;
-margin-left: 350px;
-margin-top: 16px;
+  margin-right: 20px;
 }
+
 .assing-name-5{
 color: #222222;
 font-family: Avenir;
@@ -417,10 +432,10 @@ letter-spacing: 0;
 line-height: 33px;
 margin: 10px 10px 10px 27px;
 }
-.assign-name-data-5
+.assign-name-datadsfsfs-5
 {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 .add-modal-button-5
 {
@@ -439,33 +454,43 @@ margin: 9px 85px;
 border: none;
 outline: none;
 }
-.main-div-assign-name-data-5
+.main-div-assign-namefgdg-data-5
 {
- height: 285px !important;
-  scrollbar-width: thin;
- overflow-y: auto;
+height: 285px !important;
+scrollbar-width: thin;
+overflow-y: auto;
+width: 104%;
 }
 .assign-name-5
 {
-    color: #222222;
+  color: #222222;
   font-family: Avenir;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 19px;
-  margin-left: 8px;
+}
+.citydgdg
+{
+  white-space: nowrap;
+  padding-left: 40px !important;
 }
 
-
+.dsfdjfdf
+{
+height: 16px;
+width: 16px;
+margin-right: 16px;
+}
 .table > :not(:last-child) > :last-child > * {
   border-bottom-color: unset !important;
 }
-.icon-delete-3.row {
+/* .icon-delete-3fdgdg.row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 0%;
   align-content: center;
-}
+} */
 .row > * {
   padding-right: none;
   padding-left: none;

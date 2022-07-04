@@ -23,7 +23,7 @@ margin-left: 38px;
 padding-left: 0 0 0 0;
 padding: 0px 0px 10px 3px;
 position: absolute;
-top: 21px;
+top: 17px;
 }
 .inputlkjhgf
 {
@@ -56,14 +56,27 @@ line-height: 19px;
 height: 63%;
 margin-top: 14px;
 }
-/* inside second div */
-.navigationkgf
+.refresh-iconkjgfff
 {
-padding: 6px 16px 16px 16px;
+  padding-top: 5px;
+padding-left: 25px;
+}
+/* inside second div */
+.navigationkgf p
+{
+  padding: 7px 0px;
   color: #222222;
   font-family: Avenir;
   font-size: 18px;
   font-weight: 900;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+.navigationkgf span
+{
+  padding: 6px 16px 16px 16px;
+  font-family: Avenir;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 25px;
 }
@@ -88,7 +101,7 @@ margin-top: 19px;
 .mnbvc
 {
   width: 24%;
-     border-right: 2px ;
+  border-right: 2px ;
 }
 /* search input field */
 .search-dash .input-field
@@ -125,8 +138,8 @@ padding-left: 5px;
 outline: none;
 border: none;
 background: #007aff;
-margin-left: 28px;
-margin-top: 10px;
+margin-left: 26px;
+margin-top: 9px;
    color: #FFFFFF;
   font-family: Avenir;
   font-size: 14px;
@@ -279,8 +292,8 @@ padding-left: 84px!important;
 }
 .asdfasg
 {
-padding: 14px 10px 7px 30px;
-margin-top: 1px;
+padding: 14px 10px 7px 9px;
+margin-top: 28px;
 padding: 14px 10px 7px 9px;
 margin-top: 1px;
 width: 88%;
@@ -294,6 +307,16 @@ margin-left: 22px;
 display: flex;
 justify-content: space-between; 
 }
+.div-imgg {
+  width: 80px;
+  border-radius: 8px;
+  background-color: #F6F6F7;
+  margin-bottom: 24px;
+}
+.sgddg {
+  width: 100%;
+  padding: 16px;
+}
 /* cross icon */
 .btn-cross-1fgd
 {
@@ -305,12 +328,22 @@ margin-top: 11px;
 /* modal css  for add-city*/
 .modal-dialog
 {
-height: 48%;
+height: 46%;
 background: black;
 border-radius: 8px;
 top: 24%;
 } 
-
+.adfgbut
+{
+  color: #007AFF;
+  font-family: Avenir;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-top: 14px;
+margin-left: 10px;
+}
 .modal-content
 {
   height: 100%;
@@ -346,7 +379,7 @@ width: 432px;
 border-radius: 24px;
 background-color: #007AFF;
 margin-left: 20px;
-margin-bottom: 24px;
+margin-top: 24px;
 }
 .add-modal-button
 {

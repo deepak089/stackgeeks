@@ -25,6 +25,7 @@ const Product = () => {
     const [ModalInput, setModalInput] = useState();
     const [ModalShowAssign, setModalShowAssign] = useState(false);
 
+
     const handleModalShow = () => {
         setshowModal(true);
     }
@@ -33,45 +34,38 @@ const Product = () => {
         setshowModal(false);
     }
 
-    const handleModalShowAssign = () => {
-        setModalShowAssign(true)
-    }
-    const handleModalHideAssign = () => {
-        setModalShowAssign(false);
-    }
+    
 
     return (
         <>
             <div className="main-dash">
-                
+
                 <div className="lkjhgfsgfgggghh row">
-                     <div className="col-lg-4 nmjkuijkhjjjjhh row">
+                    <div className="col-lg-4 nmjkuijkhjjjjhh row">
                         <div className="search-iconkjhfgjjjjhh">
                             <img src={search} alt="" />
                         </div>
                         <div className="inputlkjhgffffffhh">
-                            <input type="text" name="" placeholder='search city' className="input-filedxddgddddddhh"id="" />
+                            <input type="text" name="" placeholder='search city' className="input-filedxddgddddddhh" id="" />
                         </div>
-                     </div>
+                    </div>
 
-                     <div className="col-lg-5 navigationkgffffffhh">
-                        <div className="navigationkgffffhh">
-                            <p className='sdfgfhjdhhh'>Delivery {`>`} zone </p>
-                        </div>
-                     </div>
+                    <div className="col-lg-5 navigationkgffffffhh">
+                            <span>Product Management </span> <p className='sdfgfhjdhhh'>{`>`} product </p>
+                    </div>
 
-                     <div className="col-lg-3 dsgfdgyhffffffhh">
-                         <div className="refresh-iconkjgffffhh">
+                    <div className="col-lg-3 dsgfdgyhffffffhh">
+                        <div className="refresh-iconkjgffffhh">
                             <img src={filter} alt="" />
                         </div>
 
                         <div className="filter-iconkjgffffhh">
-                            <img src={filter} alt="" />f
+                            <img src={filter} alt="" />
                         </div>
                         <div className="add-city-buttonkjhvvvvvvvv">
-                            <button  className='sdhgfhffffffhh' onClick={handleModalShow}>Add zone</button>
+                            <button className='sdhgfhffffffhh' onClick={handleModalShow}>Add product</button>
 
-                             {/* add city modal */}
+                            {/* add city modal */}
                             <div className="add-zone-modal-4">
                                 <Modal show={showModal}>
 
@@ -102,7 +96,7 @@ const Product = () => {
                                         <div className="modal-input-4">
                                             <select name="" id="" className='select-input-4' >
                                                 <option value="">Assign to</option>
-                                                <option value="" onClick={handleModalShowAssign}></option>
+                                                <option value="" ></option>
 
                                             </select>
                                         </div>
@@ -115,98 +109,10 @@ const Product = () => {
                                 </Modal>
                             </div>
 
-                            {/* assign modal */}
-                            <div className="add-zone-modal-5">
-                                <Modal show={ModalShowAssign} id="assign-modal">
-                                    <div className="head-5" >
-                                        <p className='add-zone-text-5'>Assign to </p>
-                                        <img src={close} className="btn-cross-5" onClick={handleModalHideAssign} />
-                                    </div>
 
-                                    {/* body for assign modal */}
-                                    <Modal.Body>
-                                        <div className="main-div-assign-name-data-5">
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon">
-                                                    <img src={close} alt="" className="assign-icon-5" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
 
-                                            <div className="assign-name-data-5">
-                                                <div className="assign-name-5">Deep</div>
-                                                <div className="assign-icon-5">
-                                                    <img src={close} alt="" /> </div>
-                                            </div>
-
-                                        </div>
-
-                                    </Modal.Body>
-
-                                    <footer>
-                                        <div className="modal-button">
-                                            <button className='add-modal-button-5'>continue</button>
-                                        </div>
-                                    </footer>
-                                </Modal>
-                            </div>
-                            
                         </div>
-                     </div>
+                    </div>
                 </div>
                 {/*  main body */}
                 <div className="main-body">
@@ -218,8 +124,8 @@ const Product = () => {
 
                                     <th  >Sr.no.</th>
                                     <th  >Image</th>
-                                    <th  style={{width:"112px",whiteSpace:"nowrap"}}>Product Name</th>
-                                     
+                                    <th style={{ width: "112px", whiteSpace: "nowrap" }}>Product Name</th>
+
 
 
                                     <th  >Category</th>
@@ -228,7 +134,7 @@ const Product = () => {
 
                                     <th >Discount Price</th>
                                     <th  >Tag</th>
-                                    <th  style={{width:"120px"}}>Discription</th>
+                                    <th style={{ width: "120px" }}>Discription</th>
                                     <th  >Subscription</th>
                                     <th  >Sku</th>
                                     <th  >Action</th>
@@ -240,13 +146,28 @@ const Product = () => {
 
                                     <td >01</td>
                                     <td className='checkbox-img'><img src={empty_checkbox} alt="" /></td>
-                                    <td style={{wordBreak: "break-all"}}>country coconut..More</td>
+                                    <td style={{ wordBreak: "break-all" }}>country coconut..More</td>
 
                                     <td >country specials</td>
-                                    <td >59/piece</td>
+                                    <td class="myDIV">59/piece
+                                        <div class="hide">I am shown when someone hovers over the div above.</div>
+                                    </td>
                                     <td >7/piece </td>
-                                    <td ><p>Newly added</p>                           </td>
-                                    <td >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                    <td>
+                                    <p>
+                                     <div className="dsggdgfd d-flex">
+                                        <div className="newlyadded">
+                                            Newly added
+                                            <i class="fa fa-close" aria-hidden="true" style={{color:"red"}}></i>
+                                        </div>
+                                        <div className="editbo">
+                                        <i class='far fa-edit'></i>
+                                        </div>
+                                    </div>      
+                                    </p>
+                                    
+                                    </td>
+                                    <td >Lorem ipsum dolor sit amet</td>
                                     <td >yes</td>
                                     <td >3</td>
 
@@ -258,8 +179,73 @@ const Product = () => {
                                         </div>
                                     </td>
                                 </tr>
-                               
-                               
+                                
+                                <tr>
+                                    <td className='checkbox-img'><img src={empty_checkbox} alt="" /></td>
+
+                                    <td >01</td>
+                                    <td className='checkbox-img'><img src={empty_checkbox} alt="" /></td>
+                                    <td style={{ wordBreak: "break-all" }}>country coconut..More</td>
+
+                                    <td >country specials</td>
+                                    <td >59/piece</td>
+                                    <td >7/piece </td>
+                                    <td>
+                                    <p>
+                                     <div className="dsggdgfdsdgfd d-flex">
+                                        <div className="newlyaddedfdgdf">
+                                            <i class="fa fa-plus plus-iconzdf" aria-hidden="true" style={{color:"blue"}}></i>
+                                             Add Tag
+                                        </div>
+                                    </div>      
+                                    </p>
+                                    </td>
+                                    <td >Lorem ipsum dolor sit amet</td>
+                                    <td >yes</td>
+                                    <td >3</td>
+
+                                    <td >
+                                        <div className="dropdown-container" tabIndex="-1">
+                                            <img src={more} alt="" className="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
+                                            {show2 ? <>
+                                                <ThreeDot /> </> : ""}
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td className='checkbox-img'><img src={empty_checkbox} alt="" /></td>
+
+                                    <td >01</td>
+                                    <td className='checkbox-img'><img src={empty_checkbox} alt="" /></td>
+                                    <td style={{ wordBreak: "break-all" }}>country coconut..More</td>
+
+                                    <td >country specials</td>
+                                    <td >59/piece</td>
+                                    <td >7/piece </td>
+                                    <td>
+                                    <p>
+                                     <div className="dsggdgfdsdgfd d-flex">
+                                        <div className="inputfdgdf">
+                                           <input type="text"  className="ssddfgdf" name="" placeholder='Enter tag' id="" />
+
+                                             <i class="fa fa-plus plus-iconzdfsdgdhd" aria-hidden="true" style={{color:"blue"}}></i>
+                                        </div>
+                                    </div>      
+                                    </p>
+                                    </td>
+                                    <td >Lorem ipsum dolor sit amet</td>
+                                    <td style={{color:"#04A669"}}>yes</td>
+                                    <td >3</td>
+
+                                    <td >
+                                        <div className="dropdown-container" tabIndex="-1">
+                                            <img src={more} alt="" className="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
+                                            {show2 ? <>
+                                                <ThreeDot /> </> : ""}
+                                        </div>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

@@ -61,15 +61,26 @@ padding-left: 21px;
 }
 .navigationkgffffffhh
 {
-padding: 13px 16px 16px 16px;
+  display: flex;
+width: 51%;
+border-right: 2px solid #ECECEC;
+}
+.navigationkgffffffhh p
+{
+  padding: 10px 12px 12px 9px;
   color: #222222;
   font-family: Avenir;
   font-size: 18px;
   font-weight: 900;
   letter-spacing: 0;
   line-height: 25px;
-width: 52%;
-border-right: 2px solid #ECECEC;
+}
+.navigationkgffffffhh span
+{
+  padding: 19px 1px 5px 18px;
+  color: #222222;
+  font-family: Avenir;
+  font-size: 18px;
 }
 .dsgfdgyhffffffhh
 {
@@ -79,7 +90,10 @@ border-right: 2px solid #ECECEC;
   display: flex;
   justify-content: space-around;
 }
-
+.dsggdgfdsdgfd
+{
+  justify-content: space-around;
+}
 .add-city-buttonkjhvvvvvvvv{
   border-radius: 20px;
 background-color: #007AFF;
@@ -92,7 +106,7 @@ height: 100%;
 outline: none;
 border: none;
 background: #007aff;
-margin-left: 28px;
+margin-left: 15px;
 margin-top: 10px;
 color: #FFFFFF;
 font-family: Avenir;
@@ -102,8 +116,75 @@ letter-spacing: 0;
 line-height: 19px;
 text-align: center;
 }
-
-
+.newlyaddedfdgdf
+{
+  color: #007AFF;
+padding-top: 4px;
+display: flex;
+justify-content: space-around;
+width: 46%;
+height: 32px;
+margin-right: 105px;
+  background-color: rgb(0, 122, 255);
+border: 1px solid #007AFF;
+border-radius: 16px;
+background-color: #DDEEFF;
+}
+.newlyadded
+{
+border-radius: 16px;
+background-color: #F6F6F7;
+height: 32px;
+padding-top: 4px;
+display: flex;
+justify-content: space-around;
+width: 48%;
+}
+.inputfdgdf
+{
+text-align: center;
+border-radius: 16px;
+background-color: #F6F6F7;
+height: 32px;
+padding-top: 4px;
+display: flex;
+justify-content: space-around;
+width: 75%;
+margin-right: 30px;
+}
+.ssddfgdf
+{
+  border: none;
+  outline: none;
+    color: #909090;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 19px;
+  padding: 7px 0px 10px 19px;
+    background: #f6f6f7;
+  border-radius: 20px;
+}
+.fa.fa-plus.plus-iconzdfsdgdhd {
+  margin-top: 5px;
+  margin-right: 14px;
+}
+.fa.fa-plus.plus-iconzdf {
+  margin-top: 2px;
+}
+.fa-times-circle-o{
+  margin-left: 10px;
+  color:red;
+}
+.fa.fa-close {
+  padding-top: 3px;
+}
+.far.fa-edit {
+  margin-left: 19px;
+  margin-top: 6px;
+  color: rgb(149, 149, 235);
+}
 .main-body .card
 {
     position: absolute;
@@ -384,66 +465,9 @@ outline: none;
 overflow-y: auto;
 }
 
-/* assign modal  */
-#assign-modal
-{
- max-height: 424px;
+.dsggdgfd{
+  justify-content: space-around;
 }
-.assign-icon-5 {
- height: 24px;
-width: 24px;
-right: 5%;
-margin-left: 350px;
-margin-top: 16px;
-}
-.assing-name-5{
-color: #222222;
-font-family: Avenir;
-font-size: 24px;
-font-weight: 900;
-letter-spacing: 0;
-line-height: 33px;
-margin: 10px 10px 10px 27px;
-}
-.assign-name-data-5
-{
-  display: flex;
-  flex-direction: row;
-}
-.add-modal-button-5
-{
-background-color: #007AFF;
-color: #FFFFFF;
-font-family: Avenir;
-font-size: 14px;
-font-weight: 900;
-letter-spacing: 0;
-line-height: 19px;
-text-align: center;
-margin: 32px 8px 52px 166px;
-width: 264px;
-height: 32px;
-margin: 9px 85px;
-border: none;
-outline: none;
-}
-.main-div-assign-name-data-5
-{
- height: 285px !important;
-  scrollbar-width: thin;
- overflow-y: auto;
-}
-.assign-name-5
-{
-    color: #222222;
-  font-family: Avenir;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 19px;
-  margin-left: 8px;
-}
-
 
 .table > :not(:last-child) > :last-child > * {
   border-bottom-color: unset !important;
@@ -457,4 +481,13 @@ outline: none;
 .row > * {
   padding-right: none;
   padding-left: none;
+}
+
+.hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
 }
