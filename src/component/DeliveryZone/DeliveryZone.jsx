@@ -43,35 +43,39 @@ const DeliveryZone = () => {
     return (
         <>
             <div className="main-dash">
-                
+
                 <div className="lkjhgfsgfgggg row">
-                     <div className="col-lg-4 nmjkuijkhjjjj row">
+                    <div className="col-lg-4 nmjkuijkhjjjj row">
                         <div className="search-iconkjhfgjjjj">
                             <img src={search} alt="" />
                         </div>
                         <div className="inputlkjhgffffff">
-                            <input type="text" name="" placeholder='search city' className="input-filedxddgdddddd"id="" />
+                            <input type="text" name="" placeholder='search city' className="input-filedxddgdddddd" id="" />
                         </div>
-                     </div>
+                    </div>
 
-                     <div className="col-lg-5 navigationkgffffff">
+                    <div className="col-lg-5 navigationkgffffff">
                         <div className="navigationkgffff">
                             <p className='sdfgfhjdh'>Delivery {`>`} zone </p>
                         </div>
-                     </div>
+                    </div>
 
-                     <div className="col-lg-3 dsgfdgyhffffff">
-                         <div className="refresh-iconkjgffff">
-                            <img src={filter} alt="" />
+                    <div className="col-lg-3 dsgfdgyhffffff">
+                        <div className="filtericondfgd">
+                            <div className="refresh-iconkjgffff">
+                                <img src={filter} alt="" />
+                            </div>
+
+                            <div className="filter-iconkjgffff">
+                                <img src={filter} alt="" />
+                            </div>
                         </div>
 
-                        <div className="filter-iconkjgffff">
-                            <img src={filter} alt="" />
-                        </div>
+
                         <div className="add-city-buttonkjhvvvvvv">
-                            <button  className='sdhgfhffffff' onClick={handleModalShow}>Add zone</button>
+                            <button className='sdhgfhffffff' onClick={handleModalShow}>Add zone</button>
 
-                             {/* add city modal */}
+                            {/* add city modal */}
                             <div className="add-zone-modal-4">
                                 <Modal show={showModal}>
 
@@ -204,9 +208,9 @@ const DeliveryZone = () => {
                                     </footer>
                                 </Modal>
                             </div>
-                            
+
                         </div>
-                     </div>
+                    </div>
                 </div>
                 {/*  main body */}
                 <div className="main-body">
@@ -216,15 +220,15 @@ const DeliveryZone = () => {
                                 <tr>
                                     <th className='checkbox-img'><img src={empty_checkbox} alt="" /> </th>
 
-                                    <th  style={{ paddingLeft: "30px" }}>Sr.no.</th>
+                                    <th style={{ paddingLeft: "30px" }}>Sr.no.</th>
 
                                     <th  >Zone</th>
 
-                                    <th  style={{ whiteSpace: "nowrap" }}>Delivery bot assign</th>
+                                    <th style={{ whiteSpace: "nowrap" }}>Delivery bot assign</th>
 
-                                    <th  style={{ whiteSpace: "nowrap" }}>City Name</th>
+                                    <th style={{ whiteSpace: "nowrap" }}>City Name</th>
 
-                                    <th  style={{ width: "160px", whiteSpace: "nowrap" }}>Delivery location</th>
+                                    <th style={{ width: "160px", whiteSpace: "nowrap" }}>Delivery location</th>
 
                                     <th  >Action</th>
                                 </tr>
@@ -248,7 +252,7 @@ const DeliveryZone = () => {
                                         </div>
                                     </td>
 
-                                    <td  style={{ width: "160px", whiteSpace: "nowrap" }}>Sector 2,sector 7,sector 14,
+                                    <td style={{ width: "160px", whiteSpace: "nowrap" }}>Sector 2,sector 7,sector 14,
                                         sector 19... <span>See more</span>
 
                                     </td>
@@ -267,8 +271,8 @@ const DeliveryZone = () => {
                                     <td style={{ paddingLeft: "30px" }}>01</td>
                                     <td >Zone01</td>
 
-                                   
-                                    <td  style={{ whiteSpace: "nowrap" }}>
+
+                                    <td style={{ whiteSpace: "nowrap" }}>
                                         <div className='assign-boy-3'>
                                             <i class="fa fa-plus" style={{ marginRight: "10px" }} ></i>Assign Delivery boy
                                         </div></td>
@@ -283,7 +287,7 @@ const DeliveryZone = () => {
                                         </div>
                                     </td>
 
-                                    <td  style={{ width: "160px", whiteSpace: "nowrap" }}>Sector 2,sector 7,sector 14,
+                                    <td style={{ width: "160px", whiteSpace: "nowrap" }}>Sector 2,sector 7,sector 14,
                                         sector 19... <span>See more</span>
 
                                     </td>
@@ -301,7 +305,7 @@ const DeliveryZone = () => {
                                     <td style={{ paddingLeft: "30px" }}>01</td>
                                     <td >Zone01</td>
                                     <td>
-                                    <input type="text" name="" className='input-zone-4' placeholder='Enter the Name' id="" /></td>
+                                        <input type="text" name="" className='input-zone-4' placeholder='Enter the Name' id="" /></td>
                                     <td >
                                         <div className="icon-delete-3 row">
                                             <i class="fa fa-plus" aria-hidden="true"
