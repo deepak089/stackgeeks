@@ -1,0 +1,364 @@
+.main-dash .lkjhgf
+{
+margin-top: 35px;
+background-color: #FFF;
+height: 74px;
+width: 1425px;
+position: fixed;
+box-shadow: 0 2px 6px 0 rgba(0,0,0,0.05);  
+z-index: 2400;
+}
+/* start of new one */
+.nmjkui
+{
+ border-right: 2px solid #ECECEC;
+width: 31%;
+}
+
+/* input search  */
+.search-iconkjhf
+{
+width: 3%;
+margin-left: 38px;
+padding-left: 0 0 0 0;
+padding: 0px 0px 10px 3px;
+position: absolute;
+top: 15px;
+}
+.inputlkjhgf
+{
+ width: 90%;
+height: 60%;
+margin: 15px;
+}
+/* input field */
+.input-filedxddgd
+{
+height: 100%;
+width: 105%;
+padding: 4px 10px 8px 38px;
+margin-left: 0px;
+border-radius: 8px;
+background-color: #F6F6F7;
+border: none;
+outline: none;
+color: #8B8B8C;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+}
+/* second div  */
+.fghdfkdh
+{
+  width: 52%;
+height: 63%;
+margin-top: 14px;
+}
+/* inside second div */
+.navigationkgf
+{
+padding: 6px 16px 16px 16px;
+  color: #222222;
+  font-family: Avenir;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+/* third div */
+.dsgfdgyhf
+{
+
+width: 19%;
+height: 60%;
+margin-top: 16px;
+display: flex;
+justify-content: space-around;
+}
+
+.third-div-5
+{
+display: flex;
+justify-content: flex-end;
+margin-left: 31%;
+margin-top: 19px;
+}
+.mnbvc
+{
+  width: 24%;
+     border-right: 2px ;
+}
+/* search input field */
+.search-dash .input-field
+{
+  background-color: #F6F6F7;
+  padding: 8px;
+  margin: 5px;
+  width: 411%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 40px;
+  color: #8B8B8C;
+  border-radius: 8px;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+/* add-city div */
+.add-city-buttonkjhv{
+  border-radius: 20px;
+background-color: #007AFF;
+width: 50%;
+height: 100%;
+}
+/* button city div  */
+
+.sdhgfhf{
+outline: none;
+border: none;
+background: #007aff;
+margin-left: 28px;
+margin-top: 10px;
+   color: #FFFFFF;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: center;
+}
+
+.main-body .card
+{
+    position: absolute;
+    top: 22%;
+    width: 91%;
+    height: 1470px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.05);
+    z-index:-1;
+}
+
+/* table card */ 
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  margin-top: 24px;
+  position: relative;
+}
+
+.table thead th  {
+  border-top: 0;
+  border-bottom-width: 1px;
+  color: #222222;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.table thead th .image {
+padding-left: 84px!important;
+}
+ 
+ .table .checkbox-img
+ {
+    height: 24px;
+    width: 24px;
+ }
+
+.table td
+{
+  color: #222222;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+.table td span
+{
+  color: #007AFF;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+/* add location button */
+.table  td .location-button 
+{
+  height: 32px;
+  width: 256px;
+  
+}
+.table td .location-btn
+{
+
+  border: 1px solid #007AFF;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  width: 256px;
+}
+.table td .location-button img{
+    margin: 8px 26px 8px 8px;
+} 
+
+/* three dot modal */
+.three-dot-modal-1
+{
+  height: 120px;
+  width: 128px;
+  position: absolute;
+  z-index: 2400;
+  right: 4%;
+  z-index: 2400; 
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2);
+}
+.three-dot-modal-2
+{
+  height: 120px;
+  width: 128px;
+  position: absolute;
+  z-index: 2400;
+  right: 4%;
+  z-index: 2400; 
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2);
+}
+.three-dot-modal-2 li
+{
+  color: #222222;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.three-dot-modal-2   li .delete
+{
+    color: #ED233C;
+    margin-bottom: 16px;
+}
+.three-dot-modal-1 li
+{
+  color: #222222;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.three-dot-modal-1 li .delete
+{
+    color: #ED233C;
+    margin-bottom: 16px;
+}
+.asdfasg
+{
+padding: 14px 10px 7px 30px;
+margin-top: 1px;
+padding: 14px 10px 7px 9px;
+margin-top: 1px;
+width: 88%;
+color: #222222;
+font-family: Avenir;
+font-size: 24px;
+font-weight: 900;
+letter-spacing: 0;
+line-height: 33px;
+margin-left: 22px;
+display: flex;
+justify-content: space-between; 
+}
+/* cross icon */
+.btn-cross-1fgd
+{
+display: flex;
+height: 24px;
+width: 24px;
+margin-top: 11px;
+}
+/* modal css  for add-city*/
+.modal-dialog
+{
+height: 48%;
+background: black;
+border-radius: 8px;
+top: 24%;
+} 
+
+.modal-content
+{
+  height: 100%;
+  border: none;
+}
+
+.modal-input
+{
+  border-radius: 8px;
+  background-color: #F6F6F7;
+}
+.modal-input input
+{
+  height: 32px;
+  width: 328px;
+  color: #909090;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 19px;
+  outline: none;
+  border: none;
+  margin-top: 8px;
+  margin-left: 32px;
+  margin-bottom: 8px;
+  background: #f6f6f7;
+}
+.modal-button
+{
+height: 48px;
+width: 432px;
+border-radius: 24px;
+background-color: #007AFF;
+margin-left: 20px;
+margin-bottom: 24px;
+}
+.add-modal-button
+{
+  height: 32px;
+width: 240px;
+color: #FFFFFF;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 900;
+letter-spacing: 0;
+line-height: 19px;
+text-align: center;
+background: #007aff;
+border: none;
+outline: none;
+margin: 8px 96px;
+}

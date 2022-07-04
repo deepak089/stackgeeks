@@ -1,0 +1,119 @@
+.main-divrr
+{
+    overflow-x: hidden;
+}
+.rectangle-11rr {
+  position: fixed;
+  height: 72px;
+  width: 1538px;
+  background-color: #222222;
+}
+.logorr {
+  height: 72px;
+  width: 288px;
+}
+.bitmaprr {
+  height: 40px;
+  width: 121.67px;
+  margin-top:16px;
+}
+.maskrr {
+  height: 40px;
+width: 288px;
+background-color: #222222;
+margin-top: 10px;
+margin-left: 47px;
+}
+.left-imagerr .bitmaprrleft{
+  height: 98vh!important;
+  width: 42%;
+  overflow-x: none!important;
+}
+.right-resetrr
+{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    width: 39%;
+}
+/* reset password p */
+.reset-your-accountrr p
+{
+    
+  color: #222222;
+  font-family: Avenir;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 33px;
+  text-align: center;
+}
+/* reset span */
+.reset-your-accountrr span
+{
+  color: #222222;
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+
+
+}
+/* email input */
+.input-fieldrr .input-emailrr {
+border-radius: 8px;
+background-color: #F6F6F7;
+color: #222222;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+width: 100%;
+outline: none;
+border: none;
+padding:10px 16px;
+margin-top: 24px;
+
+ }
+
+ .input-fieldrr .input-emailrr::placeholder
+ {
+  color: #909090;
+ }
+
+/* reset button */
+.reset-formrr .reset-buttonrr
+{
+   width: 100%;
+  border-radius: 8px!important;
+  background-color: #007AFF;
+  margin-top: 38px;
+}
+.reset-formrr .reset-buttonrr .resetrr{
+  
+  width: 98%;
+  color: #FFFFFF;
+  font-family: Avenir;
+  background-color: #007AFF;
+  border: none;
+  margin: 10px 5px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: center;
+}
+
+.reset-accountrr {
+    margin: 12px;
+    color: #007AFF;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: center;
+}

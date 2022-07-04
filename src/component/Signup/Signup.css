@@ -1,0 +1,252 @@
+.main-div-signss
+{
+  overflow-x: hidden;
+}
+.rectangle-11ss {
+  position: fixed;
+  height: 72px;
+  width: 1538px;
+  background-color: #222222;
+}
+.logoss {
+  height: 72px;
+  width: 288px;
+  margin-left: 47px;
+  margin-top: 16px;
+}
+.bitmapss {
+  height: 40px;
+  width: 121.67px;
+}
+.maskss {
+  height: 40px;
+  width: 290px;
+  background-color: #222222;
+}
+.left-imagess .bitmapss{
+  height: 98vh;
+  width: 42%;
+  overflow-x: none!important;
+}
+
+.free_trail-imgss
+{
+ height: 100px;
+ width: 96%;
+ border-radius: 8px;
+ background-color: #E5F1FF;
+}
+.right-signupss
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 35%;
+    height: 75vh;
+}
+.signup-your-accountss {
+color: #222222;
+font-family: Avenir;
+font-size: 24px;
+font-weight: 900;
+letter-spacing: 0;
+line-height: 33px;
+text-align: center;
+padding-bottom: 8px;
+margin-top: 18px;
+}
+
+
+/* email input */
+.signup-formss .input-fieldss .input-emailss {
+border-radius: 8px;
+background-color: #F6F6F7;
+color: #222222;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+width: 100%;
+outline: none;
+border: none;
+padding:10px 16px;
+margin-top: 12px;
+}
+
+ .signup-formss .input-fieldss .input-emailss::placeholder
+ {
+  color: #909090;
+ }
+ /* name input */
+ .signup-formss .input-fieldss  .input-namess  {
+border-radius: 8px;
+background-color: #F6F6F7;
+color: #222222;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+width: 100%;
+outline: none;
+border: none;
+padding:10px 16px;
+margin-top: 12px;
+}
+
+ .signup-formss .input-fieldss .input-namess::placeholder
+ {
+  color: #909090;
+ }
+ /* phone input  */
+ .signup-formss .input-fieldss  .phone-fieldss .input-phoness  {
+/* border-radius: 8px; */
+background-color: #F6F6F7;
+color: #222222;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+width: 155%;
+outline: none;
+border: none;
+padding:10px 16px;
+margin-top: 12px;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+border-left: 1px solid #909090;
+
+}
+.signup-formss .input-fieldss .input-phoness::placeholder
+{
+  color: #909090;
+}
+ /* main div .flag */
+ .phone-flagss
+{
+    width: 30%;
+    color: #909090;  
+}
+/* country code */
+
+.phone-flagss select{
+    width: 82%;
+background-color: #F6F6F7;
+color: #222222;
+height: 43px;
+margin-top: 12px;
+border: none;
+outline: none;
+padding: 10px 16px 10px 10px;
+font-size: 14px;
+}
+/* country flag */
+ .phoness .phone-flagss .flagss
+ {
+    height: 40px;
+    background-color: #F6F6F7;
+    color: #222222;
+    font-family: Avenir;
+    width: 47%;
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+outline: none;
+border: none;
+padding: 12px 18px 9px 14px;
+margin-top: 12px;
+}
+
+ /* password input */
+ .signup-formss .input-fieldss .input-passwordss {
+border-radius: 8px;
+background-color: #F6F6F7;
+color: #222222;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+width: 100%;
+outline: none;
+border: none;
+padding:10px 16px;
+margin-top: 12px;
+}
+
+ .signup-formss .input-fieldss .input-passwordss::placeholder
+ {
+  color: #909090;
+ }
+
+
+ .signup-formss .input-fieldss .input-emailss::placeholder
+ {
+  color: #909090;
+ }
+
+.signup-formss .input-fieldss .passwordss .showss {
+
+  color: #909090;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: right;
+  right: 32px;
+  position: absolute;
+ top: 66%;
+}
+.signup-formss .checkbookss {
+  float:left;
+  border-radius: 8px;
+  margin-top: 12px;
+  margin-left: 7px;
+}
+ .right-signupss .signup-formss .signup-buttonss
+{
+  width: 100%;
+  border-radius: 8px;
+  background-color: #007AFF;
+  margin-top: 38px;
+}
+
+.signup-formss .signup-buttonss .signupss{
+    height: 32px;
+  width: 100%;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: Avenir;
+  background-color: #007AFF;
+  border: none;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 19px;
+  
+}
+.right-signupss .already-havess .already-have-accountss
+{
+font-family: Avenir;
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 0;
+line-height: 19px;
+margin-top: 20px;
+text-align: center;
+ }
+.right-signupss .already-havess .already-have-accountss .signupss
+{
+    color: #007AFF;
+}
+
+.input-checkbookss p{
+ margin-top: 8px;
+ font-size: 14px;
+ margin-left: 10px;
+ color:#222222;
+ float: left;
+}

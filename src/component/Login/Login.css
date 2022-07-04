@@ -1,0 +1,158 @@
+.main-divvv
+{
+    overflow-x: hidden;
+}
+.rectangle-11vv {
+  position: fixed;
+  height: 72px;
+  width: 1538px;
+  background-color: #222222;
+}
+.logovv {
+  height: 40px;
+  width: 288px;
+  margin-left: 47px;
+  margin-top: 16px;
+}
+.bitmapvv {
+  height: 40px;
+  width: 121.67px;
+  margin-top:12px ;
+}
+.maskvv {
+  height: 40px;
+  width: 288px;
+  background-color: #222222;
+}
+.left-imagevv .bitmapvv{
+
+  height: 98vh;
+  width: 42%;
+  overflow-x: none!important;
+}
+.right-loginvv
+{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    width: 30%;
+}
+.login-your-accountvv {
+  color: #222222;
+font-family: Avenir;
+font-size: 24px;
+font-weight: 900;
+letter-spacing: 0;
+line-height: 33px;
+text-align: center;
+padding-bottom: 8px;
+}
+
+.input-fieldvv .input-emailvv {
+border-radius: 8px;
+background-color: #F6F6F7;
+color: #222222;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+width: 100%;
+outline: none;
+border: none;
+padding:10px 16px;
+margin-top: 24px;
+
+ }
+ /* #909090; */
+ .input-fieldvv .input-emailvv::placeholder
+ {
+  color: #909090;
+ }
+
+.input-fieldvv .input-passwordvv 
+{
+border-radius: 8px;
+background-color: #F6F6F7;
+color: #222222; 
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+width: 100%;
+outline: none;
+border: none;
+padding:10px 16px;
+margin-top: 16px;
+    
+}
+.input-fieldvv .input-passwordvv::placeholder
+ {
+  color: #909090;
+ }
+.input-fieldvv .passwordvv .showvv {
+  height: 32px;
+  width: 56px;
+  color: #909090;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: right;
+  right: 32px;
+  position: absolute;
+  top: 137px;
+
+}
+.login-formvv .forgot-passwordvv {
+  height: 24px;
+  width: 144px;
+  color: #007AFF;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19px;
+  float: right;
+  clear: both;
+  margin-top: 20px;
+}
+.login-formvv .login-buttonvv
+{
+   width: 100%;
+  border-radius: 8px;
+  background-color: #007AFF;
+  margin-top: 38px;
+}
+.login-formvv .login-buttonvv .loginvv{
+    height: 32px;
+   width: 100%;
+  color: #FFFFFF;
+  font-family: Avenir;
+  background-color: #007AFF;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: center;
+}
+.right-loginvv .dont-accountvv .dont-have-an-accountvv
+{
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19px;
+  margin-top: 20px;
+  text-align: center;
+}
+.right-loginvv .dont-accountv .dont-have-an-accountvv .signupvv
+{
+    color: #007AFF;
+}
+
