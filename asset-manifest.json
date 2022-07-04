@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/stackgeeks/static/css/main.eb839de1.css",
+    "main.js": "/stackgeeks/static/js/main.c506d88b.js",
+    "static/media/onboarding_image.png": "/stackgeeks/static/media/onboarding_image.79445774b2062c1322b8.png",
+    "static/media/free_trail.png": "/stackgeeks/static/media/free_trail.c3d282ce958134f965fa.png",
+    "static/media/m.jpg": "/stackgeeks/static/media/m.affc046f6adf4e3b092a.jpg",
+    "index.html": "/stackgeeks/index.html",
+    "main.eb839de1.css.map": "/stackgeeks/static/css/main.eb839de1.css.map",
+    "main.c506d88b.js.map": "/stackgeeks/static/js/main.c506d88b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb839de1.css",
+    "static/js/main.c506d88b.js"
+  ]
+}
