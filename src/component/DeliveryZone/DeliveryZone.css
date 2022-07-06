@@ -113,8 +113,8 @@ justify-content: flex-end
 outline: none;
 border: none;
 background: #007aff;
-margin-left: 24px;
-margin-top: 10px;
+margin-left: 29px;
+margin-top: 12px;
 color: #FFFFFF;
 font-family: Avenir;
 font-size: 14px;
@@ -389,24 +389,21 @@ padding: 23px;
   border: none;
   outline: none;
   background: #f6f6f7;
-  padding: 14px 16px;
+  border-radius: 8px;
+  appearance: none;
+}
+.main-city
+{
+  width: 100%;
+  color: #222222;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19px;
+  background: #f6f6f7;
   border-radius: 8px;
 }
-.option-input-4
-{
-height: 32px;
-width: 400px;
-color: #222222;
-font-family: Avenir;
-font-size: 14px;
-font-weight: 500;
-letter-spacing: 0;
-line-height: 19px;
-border: none;
-outline: none;
-overflow-y: auto;
-}
-
 .modal-buttondgdgsd
 {
 width: 91%;
@@ -494,4 +491,66 @@ margin-right: 16px;
 .row > * {
   padding-right: none;
   padding-left: none;
+}
+
+/* not use */
+
+
+
+
+.okloikzo {
+  display: flex;
+  width: 100%;
+}
+.pokloizo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 86%;
+  gap: 20%;
+  
+}
+.poikjmzo {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  border-bottom: 1px solid #E8E8E8;
+  gap: 19%;
+}
+.oklpopzo {
+  margin: 0 40px;
+}
+.jnmhokzo{
+  margin: 0 -29px;
+}
+.oklpdfoplzo {
+  margin-left: 10px;
+}
+.table thead th {
+  border-top: 0;
+  border-bottom-width: 1px !important;
+  border-bottom: 1px solid #E8E8E8;
+}
+.table > :not(caption) > * > * {
+  border-bottom-width: 1 !important;
+  border-bottom: 1px solid #E8E8E8;
+}
+.kjkoikjzo {
+  border-bottom: 1px solid #E8E8E8;
+}
+
+/* understand */
+@media only screen and (max-width: 1350px) 
+{
+  .main-dash .lkjhgfsgfgggg {
+  width: 91%;
+  left: 9%;
+  margin-left: -14px;
+}
+
+.sdhgfhffffff {
+  margin-left: 19px;
+margin-top: 11px;
+}
+.add-city-buttonkjhvvvvvv {
+  width: 56%;
+}
 }

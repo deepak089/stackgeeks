@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';                   
+import unselect from '../../assets/un-select.png';
 
 const SubMenu = (props) => {
-    const {name,subMenus}=props;
+    const {name,subMenus,onClick}=props;
     const [expand,setexpand]=useState(false);
 
-
     const {inactive} =props;
-
     useEffect(() => {
        if(inactive)
        {
@@ -20,25 +19,30 @@ const SubMenu = (props) => {
      
     return (
         <>
-            <li className='list-data'>
-                <p  onClick={()=>setexpand(!expand)} className='menu-item'>
+            <li className='list-data' onClick={props.onClick}>
+                <p  onClick={ () => setexpand(!expand) } className='menu-item'>
                     <div className="menu-icon">
                         <img src={props.location_button} alt="" />
-                    </div><span>{name}</span>
+                    </div>
+
+                    <span>{name}</span>
                 </p>
 
                 {subMenus && subMenus.length>0 ? (
                     <>
-                     <ul className={`sub-menu ${expand ? 'active': ''}`}>
+                    <ul className={`sub-menu ${expand ? 'active': ''}`}>
                         {subMenus.map((menu,index)=>{
                        return (<>
                         <li>
-                            <Link to={`/delivery/${menu.name}`}> <input type="radio" name="drop" key={index}/></Link>
-                            <label >{menu.name}</label>
+                        <div className="menu-icon">
+
+                        <Link to={`/delivery/${menu.name}`}>
+                        <img src={unselect} class="fa fa-circle-o sub-menu-icon "/>                        <span className="zvxbvnv">{menu.name}</span> </Link>
+                        </div>
                         </li>
                        </>)
                         })}
-                </ul>
+                    </ul>
                     </>
                 ):
                 null}

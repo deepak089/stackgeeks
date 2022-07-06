@@ -172,16 +172,8 @@ margin-top: 9px;
   position: relative;
 }
 
-.table thead th  {
-  border-top: 0;
-  border-bottom-width: 1px;
-  color: #222222;
-  font-family: Avenir;
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: 0;
-  line-height: 19px;
-}
+
+
 
 .table thead th .image {
 padding-left: 84px!important;
@@ -333,6 +325,60 @@ background: black;
 border-radius: 8px;
 top: 24%;
 } 
+.stepper {
+  margin-left: 7px;
+}
+.stepper img{
+  height: 16px;
+  width: 16px;
+}
+
+
+element {
+
+    padding-left: 30px;
+
+}
+.table > :not(:last-child) > :last-child > * {
+
+    border-bottom-color: unset !important;
+
+}
+.table > :not(:last-child) > :last-child > * {
+
+    border-bottom-color: unset !important;
+
+}
+.table > :not(:last-child) > :last-child > * {
+
+    border-bottom-color: currentColor;
+
+}
+
+.table thead th {
+
+    border-top: 0;
+    color: #222222;
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 19px;
+
+}
+
+
+.table > :not(caption) > * > * {
+
+    padding: .5rem .5rem;
+        padding-left: 0.5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+
+}
+
+
 .adfgbut
 {
   color: #007AFF;
@@ -397,3 +443,77 @@ border: none;
 outline: none;
 margin: 8px 96px;
 }
+/* not use */
+
+
+.pokloi {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+  gap: 35%;
+}
+.okloik {
+  display: flex;
+  width: 100%;
+}
+.pokloi {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+}
+.okloik {
+  display: flex;
+  width: 100%;
+}
+.pokloi {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 26%;
+}
+.poikjm {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  border-bottom: 1px solid #E8E8E8;
+}
+.oklpopl {
+  margin: 0 40px;
+}
+.jnmhok{
+  margin: 0 -29px;
+}
+.oklpdfopl {
+  margin-left: 10px;
+}
+.table thead th {
+  border-top: 0;
+  border-bottom-width: 1px !important;
+}
+.table > :not(caption) > * > * {
+  border-bottom-width: 1 !important;
+}
+.kjkoikj {
+  border-bottom: 1px solid #E8E8E8;
+}
+
+/* understand */
+
+
+@media only screen and (max-width: 1350px) 
+{
+  .main-dash .lkjhgf {
+  width: 91%;
+  left: 9%;
+  margin-left: -1px;
+}
+.profile-details {
+  margin-left: 66%;
+}
+.sdhgfhf {
+  margin-left: 22px;
+  margin-top: 9px;
+}
+.add-city-buttonkjhv {
+  width: 56%;
+}
+}
+

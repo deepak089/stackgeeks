@@ -11,6 +11,7 @@ import index from '../../assets/index.jpg';
 import { Modal, ModalDialog } from 'react-bootstrap';
 import ThreeDot from '../Three-dot-div/ThreeDot';
 import '../Three-dot-div/ThreeDot.css'
+import triangle from '../../assets/triangle.png';
 
 
 const DeliveryCity = () => {
@@ -97,42 +98,68 @@ const DeliveryCity = () => {
                     <div class="card">
                         <table class="table">
                             <thead>
-                                <tr>
-                                    <th className='checkbox-img'><img src={empty_checkbox} alt="" /> </th>
-
-                                    <th className='srno' style={{ paddingLeft: "30px" }}>Sr.no.</th>
-
-                                    <th className='image' style={{width:"160px"}}>Image</th>
-
-                                    <th className='city' style={{  whiteSpace: "nowrap",width:"250px" }}>City Name</th>
-
-                                    <th className='delivery' style={{  width: "60px", whiteSpace: "nowrap" }}>Delivery location</th>
-
-                                    <th className='action' style={{width:"80px"}}>Action</th>
-                                    <th></th>
+                                <tr className="kjkoikj">
+                                    <div className="pokloi">
+                                        <div className="okloik">
+                                            <th className='checkbox-img'><img src={empty_checkbox} alt="" /> </th>
+                                        </div>
+                                        <div className="okloik">
+                                            <div>
+                                                <th className='srno' >Sr.no.</th>
+                                            </div>
+                                            <div className="stepper">
+                                                <img src={triangle} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="okloik">
+                                            <th className='image' >Image</th>
+                                        </div>
+                                        <div className="okloik">
+                                            <div>
+                                                    <th className='city' style={{  whiteSpace: "nowrap",}}>City Name</th>
+                                            </div>
+                                            <div className="stepper">
+                                                <img src={triangle} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="okloik">
+                                            <div className="jnmhok">
+                                                    <th className='delivery' style={{   whiteSpace: "nowrap" }}>Delivery location </th>
+                                            </div>
+                                            <div className="stepper">
+                                                <img src={triangle} className="oklpopl" alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="okloik">
+                                            <div>
+                                                <th className='action' >Action</th>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td className='checkbox-img'><img src={empty_checkbox} alt="" /></td>
+                                <tr className="poikjm">
+                                    <td className='checkbox-img ikjuk'><img src={empty_checkbox} alt="" /></td>
 
-                                    <td style={{ paddingLeft: "30px" }}>01</td>
+                                    <td >01</td>
 
                                     <td className='checkbox-img' ><img src={empty_checkbox} alt="" /></td>
 
                                     <td >Mumbai</td>
                                     <td className='delivery-ad' style={{  whiteSpace: "nowrap" }}>Sector 2,sector 7,sector 14,
                                         sector 19... <span>See more</span>
-
                                     </td>
+
                                     <td >
                                         <div className="location-button">
                                             <button className='location-btn'>
                                                 <img src={location_button} alt="" /> <span className='add-delivery'>Add delivery location</span>
                                             </button>
-
                                         </div>
                                     </td>
+
                                     <td >
                                         <div className="dropdown-container" tabIndex="-1">
                                             <img src={more} alt="" class="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
@@ -141,26 +168,25 @@ const DeliveryCity = () => {
                                         </div>
                                     </td>
                                 </tr>
-                               <tr>
+                               <tr className="poikjm">
+                                    <td className='ikjuk'><img src={empty_checkbox} alt="" /></td>
+
+                                    <td >01</td>
+
                                     <td className='checkbox-img'><img src={empty_checkbox} alt="" /></td>
 
-                                    <td style={{ paddingLeft: "30px" }}>01</td>
-
-                                    <td className='checkbox-img' ><img src={empty_checkbox} alt="" /></td>
-
                                     <td >Mumbai</td>
-                                    <td className='delivery-ad' style={{  whiteSpace: "nowrap" }}>Sector 2,sector 7,sector 14,
-                                        sector 19... <span>See more</span>
-
+                                    <td className='delivery-ad' style={{whiteSpace: "nowrap"}}>Sector 2,sector 7,sector 14,sector 19... <span>See more</span>
                                     </td>
+
                                     <td >
                                         <div className="location-button">
                                             <button className='location-btn'>
                                                 <img src={location_button} alt="" /> <span className='add-delivery'>Add delivery location</span>
                                             </button>
-
                                         </div>
                                     </td>
+
                                     <td >
                                         <div className="dropdown-container" tabIndex="-1">
                                             <img src={more} alt="" className='three-dots' onClick={() => setshow2(currentShow1 => !currentShow1)} />
@@ -169,13 +195,9 @@ const DeliveryCity = () => {
                                         </div>
                                     </td>
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>
-
-
-
                 </div>
             </div>
 

@@ -14,7 +14,7 @@ const Login = () => {
                     <img src={stackgeeks_logo} alt="" className='bitmapss' />
                 </div>
             </header>
-            <div className='row'>
+            <div className='sgddhf'>
                 <div className="left-imagess">
                     <div >
                         <img src={onboarding_image} className="bitmapss" alt="" />
@@ -61,9 +61,9 @@ const Login = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="input-checkbookss">
+                        <div className="input-checkbookss d-flex">
                             <input type="checkbox" className="checkbookss" name="" id="" />
-                            <p >By clicking Sign Up,you agree to our <span style={{ color: "#007AFF" }}>Terms </span >and <span style={{ color: "#007AFF" }}>Privacy Policy</span></p>
+                            <p  className='dfhfjkj'>By clicking Sign Up,you agree to our <span style={{ color: "#007AFF" }}>Terms </span >and <span style={{ color: "#007AFF" }}>Privacy Policy</span></p>
                         </div>
                         <br />
                         <div className="signup-buttonss">

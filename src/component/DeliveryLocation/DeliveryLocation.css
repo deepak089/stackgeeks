@@ -226,3 +226,25 @@ padding-left: 84px!important;
   opacity: 0.5;
 }
 
+.table thead th {
+  border-top: 0;
+  border-bottom-width: 1px !important;
+}
+.table > :not(caption) > * > * {
+  border-bottom-width: 1 !important;
+}
+@media only screen and (max-width: 1350px) 
+{
+  .main-dash .lkjhgfsgfg{
+  width: 97%;
+left: 9%;
+margin-left: -17px;
+}
+
+.sdhgfhfff {
+  margin-left: 16px;
+}
+.add-city-buttonkjhvvv {
+  width: 56%;
+}
+}

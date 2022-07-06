@@ -24,26 +24,37 @@
   background-color: #222222;
 }
 .left-imagess .bitmapss{
-  height: 98vh;
-  width: 42%;
-  overflow-x: none!important;
+ height: 100vh;
+ width: 120%;
 }
-
 .free_trail-imgss
 {
  height: 100px;
- width: 96%;
+ width: 98%;
  border-radius: 8px;
  background-color: #E5F1FF;
 }
-.right-signupss
+/* .right-signupss
 {
     position: absolute;
     top: 20%;
     left: 50%;
     width: 35%;
     height: 75vh;
+} */
+.sgddhf
+{
+  display: flex;
+  justify-content: space-between;
+
 }
+.right-signupss
+{ 
+  width: 31%;
+  margin-right: 14%;
+  margin-top: 8%;
+}
+
 .signup-your-accountss {
 color: #222222;
 font-family: Avenir;
@@ -101,7 +112,6 @@ margin-top: 12px;
  }
  /* phone input  */
  .signup-formss .input-fieldss  .phone-fieldss .input-phoness  {
-/* border-radius: 8px; */
 background-color: #F6F6F7;
 color: #222222;
 font-family: Avenir;
@@ -109,11 +119,12 @@ font-size: 14px;
 font-weight: 300;
 letter-spacing: 0;
 line-height: 19px;
-width: 155%;
+width: 172%;
 outline: none;
 border: none;
 padding:10px 16px;
 margin-top: 12px;
+height: 42px;
 border-top-right-radius: 8px;
 border-bottom-right-radius: 8px;
 border-left: 1px solid #909090;
@@ -188,16 +199,16 @@ margin-top: 12px;
 
 .signup-formss .input-fieldss .passwordss .showss {
 
-  color: #909090;
-  font-family: Avenir;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0;
-  line-height: 19px;
-  text-align: right;
-  right: 32px;
-  position: absolute;
- top: 64%;
+ color: #909090;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+text-align: right;
+right: 15%;
+position: absolute;
+top: 65%;
 }
 .signup-formss .checkbookss {
   float:left;
@@ -210,22 +221,22 @@ margin-top: 12px;
   width: 100%;
   border-radius: 8px;
   background-color: #007AFF;
-  margin-top: 38px;
 }
 
 .signup-formss .signup-buttonss .signupss{
-    height: 32px;
-  width: 100%;
-  border-radius: 8px;
-  color: #FFFFFF;
-  font-family: Avenir;
-  background-color: #007AFF;
-  border: none;
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: 0;
-  line-height: 19px;
+  height: 32px;
+width: 100%;
+border-radius: 8px;
+color: #FFFFFF;
+font-family: Avenir;
+background-color: #007AFF;
+border: none;
+margin-top: 7px;
+font-size: 14px;
+font-weight: 900;
+letter-spacing: 0;
+line-height: 19px;
+margin-bottom: 11px;
   
 }
 .right-signupss .already-havess .already-have-accountss
@@ -243,10 +254,43 @@ text-align: center;
     color: #007AFF;
 }
 
-.input-checkbookss p{
- margin-top: 8px;
- font-size: 14px;
+.dfhfjkj
+{
+  margin-top: 25px;
+  font-size: 14px;
  margin-left: 10px;
  color:#222222;
- float: left;
+}
+@media (max-width:1300px) {
+.left-imagess .bitmapss{
+ width: 100%;
+}
+.input-fieldvv .passwordvv .showvv {
+position: absolute;
+top: 49%;
+} 
+.right-loginvv {
+  width: 31%;
+  margin-right: 14%;
+  margin-top: 20%;
+}
+.signup-formss .input-fieldss  .phone-fieldss .input-phoness  {
+
+width: 145%;
+}
+
+.phoness .phone-flagss .flagss
+ {
+    height: 42px
+}
+.signup-formss .input-fieldss .passwordss .showss {
+
+right: 15%;
+position: absolute;
+top: 55%;
+}
+.dfhfjkj
+{
+  margin-top: 10%!important;
+}
 }

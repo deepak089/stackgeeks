@@ -5,7 +5,7 @@
 .rectangle-11vv {
   position: fixed;
   height: 72px;
-  width: 1538px;
+  width: 100%;
   background-color: #222222;
 }
 .logovv {
@@ -26,16 +26,14 @@
 }
 .left-imagevv .bitmapvv{
 
-  height: 98vh;
-  width: 42%;
-  overflow-x: none!important;
+ height: 98vh;
+ width: 120%;
 }
-.right-loginvv
-{
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    width: 30%;
+
+.right-loginvv {
+  width: 31%;
+  margin-right: 14%;
+  margin-top: 11%;
 }
 .login-your-accountvv {
   color: #222222;
@@ -92,19 +90,16 @@ margin-top: 16px;
   color: #909090;
  }
 .input-fieldvv .passwordvv .showvv {
-  height: 32px;
-  width: 56px;
-  color: #909090;
-  font-family: Avenir;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0;
-  line-height: 19px;
-  text-align: right;
-  right: 32px;
-  position: absolute;
-  top: 137px;
-
+color: #909090;
+font-family: Avenir;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0;
+line-height: 19px;
+text-align: right;
+right: 15%;
+position: absolute;
+top: 42%;
 }
 .login-formvv .forgot-passwordvv {
   height: 24px;
@@ -127,19 +122,21 @@ margin-top: 16px;
   margin-top: 38px;
 }
 .login-formvv .login-buttonvv .loginvv{
-    height: 32px;
-   width: 100%;
-  color: #FFFFFF;
-  font-family: Avenir;
-  background-color: #007AFF;
-  border: none;
-  border-radius: 8px;
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: 0;
-  line-height: 19px;
-  text-align: center;
+
+height: 32px;
+width: 100%;
+color: #FFFFFF;
+font-family: Avenir;
+background-color: #007AFF;
+border: none;
+border-radius: 8px;
+margin-top: 7px;
+font-size: 14px;
+font-weight: 900;
+letter-spacing: 0;
+line-height: 19px;
+text-align: center;
+margin-bottom: 8px;
 }
 .right-loginvv .dont-accountvv .dont-have-an-accountvv
 {
@@ -156,3 +153,24 @@ margin-top: 16px;
     color: #007AFF;
 }
 
+
+.dfgdhfh
+{
+display: flex;
+justify-content:  space-between;
+}
+
+@media (max-width:1300px) {
+ .left-imagevv .bitmapvv{
+ width: 100%;
+}
+.input-fieldvv .passwordvv .showvv {
+position: absolute;
+top: 49%;
+} 
+.right-loginvv {
+  width: 31%;
+  margin-right: 14%;
+  margin-top: 20%;
+}
+}

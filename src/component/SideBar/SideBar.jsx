@@ -93,7 +93,13 @@ const SideBar = ({ onCollapse }) => {
                         <SubMenu
                             name="Delivery location"
                             subMenus={[{ name: "city" }, { name: "location" }, { name: "zone" }]}
-                            location_button={location_button} next={next} drop_down_open={drop_down_open} inactive={inactive} onCollapse={onCollapse} />
+                            location_button={location_button} next={next} drop_down_open={drop_down_open} inactive={inactive} onCollapse={onCollapse}
+                            onClick={()=>{
+                                if(inactive)
+                                {
+                                    setinactive(false);
+                                }
+                            }} />
 
                         <li className='list-data'>
                             <Link to="/product" className='menu-item'>
