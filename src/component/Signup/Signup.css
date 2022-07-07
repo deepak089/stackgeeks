@@ -125,9 +125,7 @@ border: none;
 padding:10px 16px;
 margin-top: 12px;
 height: 42px;
-border-top-right-radius: 8px;
-border-bottom-right-radius: 8px;
-border-left: 1px solid #909090;
+border-radius: 8px;
 
 }
 .signup-formss .input-fieldss .input-phoness::placeholder
@@ -138,7 +136,7 @@ border-left: 1px solid #909090;
  .phone-flagss
 {
     width: 30%;
-    color: #909090;  
+    color: #909090; 
 }
 /* country code */
 
@@ -156,11 +154,11 @@ font-size: 14px;
 /* country flag */
  .phoness .phone-flagss .flagss
  {
-    height: 40px;
+    height: 43px;
     background-color: #F6F6F7;
     color: #222222;
-    font-family: Avenir;
-    width: 47%;
+  font-family: Avenir;
+width: 47%;
 border-top-left-radius: 8px;
 border-bottom-left-radius: 8px;
 outline: none;
@@ -261,6 +259,31 @@ text-align: center;
  margin-left: 10px;
  color:#222222;
 }
+.PhoneInputInput {
+  flex: 1 1;
+  min-width: 0;
+  border: none;
+    border-left-color: currentcolor;
+    border-left-style: none;
+    border-left-width: medium;
+  outline: none;
+  font-size: 14px;
+  background: #f6f6f7;
+  color: #333 !important;
+  margin-left: 39px;
+  border-left: 1px solid black;
+  height: 100%;
+  padding-left: 10px;
+}
+.rstdgttfhf
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
 @media (max-width:1300px) {
 .left-imagess .bitmapss{
  width: 100%;
@@ -274,9 +297,8 @@ top: 49%;
   margin-right: 14%;
   margin-top: 20%;
 }
-.signup-formss .input-fieldss  .phone-fieldss .input-phoness  {
-
-width: 145%;
+.signup-formss .input-fieldss .phone-fieldss .input-phoness {
+  width: 150%;
 }
 
 .phoness .phone-flagss .flagss

@@ -3,13 +3,60 @@ import './Login.css';
 import stackgeeks_logo from '../../assets/stackgeeks_logo.png';
 import onboarding_image from '../../assets/onboarding_image.png';
 import {Link, useNavigate} from 'react-router-dom';
+import { useMutation } from '@apollo/client';
+import { LOGIN_USER } from '../graphql/mutation';
 
 const Login = () => {
     
-    const navigate =useNavigate();
-    const HandleToken=()=>{
-     localStorage.setItem('status','1');
-     navigate('/dashboard');
+    const navigate=useNavigate();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+   
+   
+    const handleEmail = (e) => {
+        setEmail(e.target.value);
+    }
+    const handlePassword = (e) => {
+        setPassword(e.target.value);
+    }
+
+    const [Admin_login, { data, loading,error}] = useMutation(LOGIN_USER);
+    if(error)
+      {
+
+        // console.log(error.graphQLErrors[0].message,'error here')
+        // alert(error.custom_msg)
+        // setTimeout(() => {
+        //     setError('bav')
+        // }, 1000);
+    }
+
+    if (loading) {
+        return (<>
+            <div className="d-flex justify-content-center rstdgttfhf">
+                <div className="spinner-border" role="status">
+                    <span className="sr-only">Loading...</span>
+                </div>
+            </div>
+        </>)
+    }
+    if (data) {
+        const TokenData = data.admin_login.accessToken;
+        localStorage.setItem('token',`${TokenData}`);
+        if(TokenData)
+        {
+            navigate('/dashboard');
+        }     
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const Form = { email ,password };
+        Admin_login({
+            variables: Form
+        }) 
+        Form.email = "";
+        Form.password = "";
     }
 
     return (
@@ -32,14 +79,14 @@ const Login = () => {
                         <div className="login-formvv col">
                             <div className="input-fieldvv">
                                 <div className="emailvv">
-                                <input type="text" placeholder='Enter your Email ID' className='input-emailvv' name="" id="" />
+                                <input type="text" placeholder='Enter your Email ID' onChange={handleEmail} className='input-emailvv' name="email" id="" />
                                 </div>
                                 <div className="passwordvv">
                                     <div className="showvv">
                                         <p>Show</p>
                                     </div>
                                     <div className="input-passvv">
-                                        <input type="password" placeholder='Enter Password' className='input-passwordvv' name="" id="" />
+                                        <input type="password" placeholder='Enter Password' onChange={handlePassword} className='input-passwordvv' name="password" id="" />
                                     </div>
                                     
                                 </div>
@@ -49,7 +96,7 @@ const Login = () => {
                             </div>
                             <br />
                             <div className="login-buttonvv">
-                                <Link to="/dashboard"><button className='loginvv' onClick={HandleToken}>Login</button></Link>
+                                <button className='loginvv' onClick={handleSubmit}>Login</button>
                             </div>
                         </div>
 

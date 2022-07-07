@@ -18,19 +18,18 @@ import './SideBar.css';
 import SubMenu from './SubMenu';
 import notification from '../../assets/notification.png';
 import m from '../../assets/m.jpg';
-import {Link, useNavigate} from 'react-router-dom';
+import {Link, NavLink, useNavigate} from 'react-router-dom';
 
 
 const SideBar = ({ onCollapse }) => {
     const [inactive, setinactive] = useState(false);
-    const { navigate } = useNavigate();
+    const navigate  = useNavigate();
 
     const HandleLogout=()=>{
-     localStorage.setItem('status','0');
+     localStorage.removeItem('token')
      navigate('/login');
     }
-
-    
+  
 
     return (
         <>
@@ -70,10 +69,11 @@ const SideBar = ({ onCollapse }) => {
                 <div className="main-menu">
                     <ul>
                         <li className='list-data list-1'  >
-                            <Link to ="/countrydelight" className='menu-item'>
+                            <NavLink to ="/countrydelight" className='menu-item' 
+                            >
                                 <div className="menu-icon">
                                     <img src={country_delight_logo} alt="" />
-                                </div><span>Country delight </span></Link>
+                                </div><span>Country delight </span></NavLink>
                             <div className="menu-icon-next">
                                 <img src={next} alt="next" />
                             </div>
@@ -164,7 +164,6 @@ const SideBar = ({ onCollapse }) => {
                 </div>
             </div>
         </>
-
     )
 }
 

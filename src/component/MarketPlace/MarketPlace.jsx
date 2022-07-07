@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import SideBar from '../SideBar/SideBar';
 
 const MarketPlace = () => {
+      const [inactive, setinactive] = useState(false);
   return (
-    <div>MarketPlace</div>
+    <>
+     <SideBar  onCollapse={(inactive)=>{
+       setinactive(inactive);
+       }}/>
+      <div className={`container ${inactive ? "inactive": ""}`}>
+        MarketPlace
+      </div>
+      </>
+    
+     
+      
   )
 }
 

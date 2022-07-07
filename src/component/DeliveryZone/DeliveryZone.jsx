@@ -9,11 +9,12 @@ import close from '../../assets/close.png';
 import ThreeDot from '../Three-dot-div/ThreeDot';
 import '../Three-dot-div/ThreeDot.css';
 import { Modal } from 'react-bootstrap';
+import SideBar from '../SideBar/SideBar';
 
 
 
 const DeliveryZone = () => {
-
+    const [inactive, setinactive] = useState(false);
     const [show1, setshow1] = useState(false);
 
     const [show2, setshow2] = useState(false);
@@ -42,6 +43,10 @@ const DeliveryZone = () => {
 
     return (
         <>
+         <SideBar  onCollapse={(inactive)=>{
+       setinactive(inactive);
+       }}/>
+      <div className={`container ${inactive ? "inactive": ""}`}>
             <div className="main-dash">
 
                 <div className="lkjhgfsgfgggg row">
@@ -212,8 +217,8 @@ const DeliveryZone = () => {
                 </div>
                 {/*  main body */}
                 <div className="main-body">
-                    <div class="card">
-                        <table class="table">
+                    <div className="card">
+                        <table className="table">
                             <thead>
                                 <tr>
                                     <th className='checkbox-img'><img src={empty_checkbox} alt=""  /> </th>
@@ -272,7 +277,7 @@ const DeliveryZone = () => {
 
                                     <td style={{ whiteSpace: "nowrap" }}>
                                         <div className='assign-boy-3'>
-                                            <i class="fa fa-plus" style={{ marginRight: "10px" }} ></i>Assign Delivery boy
+                                            <i className="fa fa-plus" style={{ marginRight: "10px" }} ></i>Assign Delivery boy
                                         </div></td>
 
                                     <td >
@@ -291,7 +296,7 @@ const DeliveryZone = () => {
 
                                     <td >
                                         <div className="dropdown-container" tabindex="-1">
-                                            <img src={more} alt="" class="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
+                                            <img src={more} alt="" className="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
                                             {show2 ? <>
                                                 <ThreeDot /> </> : ""}
                                         </div>
@@ -305,7 +310,7 @@ const DeliveryZone = () => {
                                         <input type="text" name="" className='input-zone-4' placeholder='Enter the Name' id="" /></td>
                                     <td >
                                         <div className="icon-delete-3 row">
-                                            <i class="fa fa-plus" aria-hidden="true"
+                                            <i className="fa fa-plus" aria-hidden="true"
                                                 style={{ color: " #007AFF" }}></i>
 
                                             <div className="delete-city-3 p-0">
@@ -329,6 +334,7 @@ const DeliveryZone = () => {
                         </table>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )

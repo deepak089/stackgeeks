@@ -10,9 +10,11 @@ import close from '../../assets/close.png';
 import ThreeDot from '../Three-dot-div/ThreeDot';
 import '../Three-dot-div/ThreeDot.css';
 import { Modal } from 'react-bootstrap';
+import SideBar from '../SideBar/SideBar';
 
 
-const Product = () => {
+const Product = () => {  
+      const [inactive, setinactive] = useState(false);
 
     const [show1, setshow1] = useState(false);
 
@@ -38,6 +40,10 @@ const Product = () => {
 
     return (
         <>
+        <SideBar  onCollapse={(inactive)=>{
+       setinactive(inactive);
+       }}/>
+      <div className={`container ${inactive ? "inactive": ""}`}>
             <div className="main-dash">
 
                 <div className="lkjhgfsgfgggghh row">
@@ -116,8 +122,8 @@ const Product = () => {
                 </div>
                 {/*  main body */}
                 <div className="main-body">
-                    <div class="card">
-                        <table class="table">
+                    <div className="card">
+                        <table className="table">
                             <thead>
                                 <tr>
                                     <th className='checkbox-img'><img src={empty_checkbox} alt="" /> </th>
@@ -149,8 +155,8 @@ const Product = () => {
                                     <td style={{ wordBreak: "break-all" }}>country coconut..More</td>
 
                                     <td >country specials</td>
-                                    <td class="myDIV">59/piece
-                                        <div class="hide">I am shown when someone hovers over the div above.</div>
+                                    <td className="myDIV">59/piece
+                                        <div className="hide">I am shown when someone hovers over the div above.</div>
                                     </td>
                                     <td >7/piece </td>
                                     <td>
@@ -158,7 +164,7 @@ const Product = () => {
                                      <div className="dsggdgfd d-flex">
                                         <div className="newlyadded">
                                             Newly added
-                                            <i class="fa fa-close" aria-hidden="true" style={{color:"red"}}></i>
+                                            <i className="fa fa-close" aria-hidden="true" style={{color:"red"}}></i>
                                         </div>
                                         <div className="editbo">
                                         <i class='far fa-edit'></i>
@@ -194,7 +200,7 @@ const Product = () => {
                                     <p>
                                      <div className="dsggdgfdsdgfd d-flex">
                                         <div className="newlyaddedfdgdf">
-                                            <i class="fa fa-plus plus-iconzdf" aria-hidden="true" style={{color:"blue"}}></i>
+                                            <i className="fa fa-plus plus-iconzdf" aria-hidden="true" style={{color:"blue"}}></i>
                                              Add Tag
                                         </div>
                                     </div>      
@@ -229,7 +235,7 @@ const Product = () => {
                                         <div className="inputfdgdf">
                                            <input type="text"  className="ssddfgdf" name="" placeholder='Enter tag' id="" />
 
-                                             <i class="fa fa-plus plus-iconzdfsdgdhd" aria-hidden="true" style={{color:"blue"}}></i>
+                                             <i className="fa fa-plus plus-iconzdfsdgdhd" aria-hidden="true" style={{color:"blue"}}></i>
                                         </div>
                                     </div>      
                                     </p>
@@ -250,6 +256,7 @@ const Product = () => {
                         </table>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )

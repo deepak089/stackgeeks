@@ -12,10 +12,12 @@ import { Modal, ModalDialog } from 'react-bootstrap';
 import ThreeDot from '../Three-dot-div/ThreeDot';
 import '../Three-dot-div/ThreeDot.css'
 import triangle from '../../assets/triangle.png';
+import SideBar from '../SideBar/SideBar';
 
 
 const DeliveryCity = () => {
-
+    
+    const [inactive, setinactive] = useState(false);
     const [show1, setshow1] = useState(false);
 
     const [show2, setshow2] = useState(false);
@@ -35,6 +37,10 @@ const DeliveryCity = () => {
 
     return (
         <>
+        <SideBar  onCollapse={(inactive)=>{
+       setinactive(inactive);
+       }}/>
+      <div className={`container ${inactive ? "inactive": ""}`}>
             <div className="main-dash">
                 
                 <div className="lkjhgf row">
@@ -95,8 +101,8 @@ const DeliveryCity = () => {
                 </div>
                 {/*  main body */}
                 <div className="main-body">
-                    <div class="card">
-                        <table class="table">
+                    <div className="card">
+                        <table className="table">
                             <thead>
                                 <tr className="kjkoikj">
                                     <div className="pokloi">
@@ -162,7 +168,7 @@ const DeliveryCity = () => {
 
                                     <td >
                                         <div className="dropdown-container" tabIndex="-1">
-                                            <img src={more} alt="" class="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
+                                            <img src={more} alt="" className="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
                                             {show2 ? <>
                                                 <ThreeDot/> </> : ""}
                                         </div>
@@ -199,8 +205,8 @@ const DeliveryCity = () => {
                         </table>
                     </div>
                 </div>
+            </div>  
             </div>
-
         </>
 
     )

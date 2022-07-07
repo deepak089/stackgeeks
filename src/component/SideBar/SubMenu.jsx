@@ -37,7 +37,7 @@ const SubMenu = (props) => {
                         <div className="menu-icon">
 
                         <Link to={`/delivery/${menu.name}`}>
-                        <img src={unselect} class="fa fa-circle-o sub-menu-icon "/>                        <span className="zvxbvnv">{menu.name}</span> </Link>
+                        <img src={unselect} className="fa fa-circle-o sub-menu-icon "/>                        <span className="zvxbvnv">{menu.name}</span> </Link>
                         </div>
                         </li>
                        </>)

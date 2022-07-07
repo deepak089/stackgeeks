@@ -9,10 +9,11 @@ import more from '../../assets/more.png';
 import close from '../../assets/close.png';
 import ThreeDot from '../Three-dot-div/ThreeDot';
 import  '../Three-dot-div/ThreeDot.css'
+import SideBar from '../SideBar/SideBar';
 
 
 const DeliveryLocation = () => {
-
+    const [inactive, setinactive] = useState(false);
     const [show1, setshow1] = useState(false);
 
     const [show2, setshow2] = useState(false);
@@ -22,6 +23,10 @@ const DeliveryLocation = () => {
 
         return (
         <>
+        <SideBar  onCollapse={(inactive)=>{
+       setinactive(inactive);
+       }}/>
+      <div className={`container ${inactive ? "inactive": ""}`}>
             <div className="main-dash">
                 <div className="lkjhgfsgfg row">
                      <div className="col-lg-4 nmjkuijkhj row">
@@ -49,8 +54,8 @@ const DeliveryLocation = () => {
                 </div>
                 {/*  main body */}
                 <div className="main-body">
-                    <div class="card">
-                        <table class="table">
+                    <div className="card">
+                        <table className="table">
                             <thead>
                                 <tr>
                                     <th className='checkbox-img-2'><img src={empty_checkbox} alt="" /> </th>
@@ -76,7 +81,7 @@ const DeliveryLocation = () => {
                                     </td>
                                      <td >
                                         <div className="dropdown-container" tabIndex="-1">
-                                            <img src={more} alt="" class="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
+                                            <img src={more} alt="" className="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
                                             {show2 ? <>
                                                 <ThreeDot Block={Block }/> </> : ""}
                                         </div>
@@ -94,7 +99,7 @@ const DeliveryLocation = () => {
                                     </td>
                                      <td >
                                         <div className="dropdown-container" tabIndex="-1">
-                                            <img src={more} alt="" class="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
+                                            <img src={more} alt="" className="three-dots" onClick={() => setshow2(currentShow1 => !currentShow1)} />
                                             {show2 ? <>
                                                 <ThreeDot Block={Block}/> </> : ""}
                                         </div>
@@ -107,7 +112,7 @@ const DeliveryLocation = () => {
                     </div>
                 </div>
             </div>
-
+        </div>
         </>
 
     )
